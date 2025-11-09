@@ -15,7 +15,7 @@ cd terraform
 terraform init
 terraform apply -auto-approve
 ```
-By default it fetches Poland COVID historical data daily at 09:00 UTC.
+By default it fetches Ukraine COVID historical data daily at 09:00 UTC.
 Change variables in `terraform/variables.tf` or via `-var` flags.
 
 ## Query (Athena)
