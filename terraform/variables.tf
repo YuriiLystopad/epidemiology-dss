@@ -21,3 +21,9 @@ variable "schedule_cron_utc" {
   type        = string
   default     = "cron(0 9 * * ? *)" # every day at 09:00 UTC
 }
+
+variable "qs_admin_email" {
+  description = "Email address of the QickSights Admin"
+  type        = string
+  default     = "listopadyura23@gmail.com"
+}

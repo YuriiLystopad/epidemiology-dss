@@ -1,0 +1,12 @@
+key*
+.terraform*
+*tfstate
+terraform.tfstate*
+queries.sql
+tfoutput
+*.zip
+*.log
+*.pyc
+__pycache__/
+.env
+aws*

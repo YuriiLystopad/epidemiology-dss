@@ -15,10 +15,14 @@ resource "aws_lambda_function" "fetch_data" {
 
   environment {
     variables = {
-      BUCKET_NAME = aws_s3_bucket.raw.bucket
-      DATA_URL    = var.data_url
+      BUCKET_NAME  = aws_s3_bucket.raw.bucket
+      DATA_URL     = var.data_url
+      AGG_MODE     = "daily"
+      MAX_GAP_DAYS = "31"
+      BACKFILL_ALL = "false"
+
     }
   }
 
-  timeout = 30
+  timeout = 600
 }
